@@ -10,6 +10,7 @@ import numpy as np
 import luchador
 import luchador.nn as nn
 from luchador.util import StoreMixin, pprint_dict
+
 from .base import BaseAgent
 from .misc import EGreedy
 from .recorder import PrioritizedQueue
