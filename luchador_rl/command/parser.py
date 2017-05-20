@@ -93,7 +93,7 @@ def _add_serve_subcommand_parser(subparsers):
         help='Model description file',
     )
     _append_port_number(param_parser, 5002)
-    _append_debug_flag(env_parser)
+    _append_debug_flag(param_parser)
     param_parser.set_defaults(func=serve.entry_point_param)
 
 
