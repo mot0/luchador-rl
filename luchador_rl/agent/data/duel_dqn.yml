@@ -13,7 +13,6 @@ args:
     - name: common
       typename: Sequential
       args:
-        name: common
         input_config:
           typename: Input
           reuse: True
@@ -62,7 +61,6 @@ args:
     - name: state_value
       typename: Sequential
       args:
-        name: state_value
         input_config:
           typename: Tensor
           name: common/layer4/flatten/output
@@ -85,7 +83,6 @@ args:
     - name: advantage
       typename: Sequential
       args:
-        name: advantage
         input_config:
           typename: Tensor
           name: common/layer4/flatten/output
@@ -108,7 +105,6 @@ args:
     - name: q_value
       typename: Sequential
       args:
-        name: q_value
         input_config:
           - typename: Tensor
             name: value/layer7/tile/output
